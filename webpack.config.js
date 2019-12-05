@@ -6,7 +6,7 @@ const glob = require("glob");
 module.exports = {
     entry:  {
         app: _.union(
-            glob.sync(`./src/app/**/*.ts`, { nosort: true }),
+            glob.sync(`./src/**/*.ts`, { nosort: true }),
         )
     },
     output: {
@@ -20,10 +20,8 @@ module.exports = {
         new htmlWebpackPlugin({
         angularAppName: "lolTricks",
         title: "lolTricks",
-        template: "./client/lolTricks/views/index.pug"
-    }),
-
-
+        template: "./src/index/index.component.pug"
+      })
     ],
     module: {
         rules: [
