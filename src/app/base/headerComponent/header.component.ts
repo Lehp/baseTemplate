@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import template from "./header.component.pug";
 
 @Component({
   selector: 'header-component',
-  templateUrl: './header.component.pug',
+  template: template(),
   styleUrls: ['./header.component.styl']
 })
 export class HeaderComponent {

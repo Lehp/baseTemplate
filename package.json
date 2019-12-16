@@ -15,10 +15,11 @@
     "reflect-metadata": "^0.1.13",
     "request": "^2.88.0",
     "rxjs": "^6.5.3",
+    "tslib": "^1.10.0",
     "zone.js": "^0.10.2"
   },
   "devDependencies": {
-    "@angular/core": "^8.2.2",
+    "@angular/core": "^8.2.14",
     "@angular/platform-browser": "^8.2.14",
     "@types/angular": "^1.6.56",
     "@types/node": "^12.7.3",

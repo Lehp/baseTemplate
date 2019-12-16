@@ -25,10 +25,10 @@ module.exports = {
     ],
     module: {
         rules: [
-            {test: /\.ts$/, loaders: "ts-loader"},
-            {test: /\.css$/, loaders: "css--loader"},
-            {test: /\.pug$/, loaders: "pug-loader"},
-            {test: /\.styl$/, loaders: "style-loader!css-loader!stylus-loader"},
+            {test: /\.ts$/, use: "ts-loader"},
+            {test: /\.css$/, use: "css--loader"},
+            {test: /\.pug$/, use: "pug-loader"},
+            {test: /\.styl$/, use: "style-loader!css-loader!stylus-loader"},
             {test: /\.html$/, use: "raw-loader"}
         ]
     }
