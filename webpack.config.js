@@ -26,10 +26,20 @@ module.exports = {
     module: {
         rules: [
             {test: /\.ts$/, use: "ts-loader"},
-            {test: /\.css$/, use: "css--loader"},
+            {test: /\.css$/, use: "css-loader"},
             {test: /\.pug$/, use: "pug-loader"},
             {test: /\.styl$/, use: "style-loader!css-loader!stylus-loader"},
-            {test: /\.html$/, use: "raw-loader"}
+            {test: /\.html$/, use: "raw-loader"},
+            {
+              test: /\.m?js$/,
+              exclude: /(node_modules|bower_components)/,
+              use: {
+                loader: 'babel-loader',
+                options: {
+                  presets: ['@babel/preset-env']
+                }
+              }
+            }
         ]
     }
 };

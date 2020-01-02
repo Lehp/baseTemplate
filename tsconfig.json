@@ -3,8 +3,6 @@
   "compilerOptions": {
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
-    "sourceMap": true,
-    "declaration": false,
     "downlevelIteration": true,
     "experimentalDecorators": true,
     "module": "esnext",
@@ -13,7 +11,7 @@
     "target": "es2015",
     "typeRoots": [
       "node_modules/@types",
-      "src/pug.d.ts"
+      "./src/pug.ts"
     ],
     "lib": [
       "es2018",
@@ -23,7 +21,8 @@
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
     "strictInjectionParameters": true
-  }
+  },
+  "exclude": ["node_modules"]
 }
 
 

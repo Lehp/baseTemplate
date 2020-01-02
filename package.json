@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "lehpBaseTemplate",
   "main": "index.js",
+  "types": "./src/pug.d.ts",
   "dependencies": {
     "@angular/common": "^8.2.14",
     "@angular/compiler": "^8.2.14",
@@ -21,14 +22,19 @@
   "devDependencies": {
     "@angular/core": "^8.2.14",
     "@angular/platform-browser": "^8.2.14",
+    "@babel/core": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
     "@types/angular": "^1.6.56",
     "@types/node": "^12.7.3",
+    "@types/webpack": "^4.41.1",
     "angular": "^1.7.5",
+    "babel-loader": "^8.0.6",
     "babel-polyfill": "^6.26.0",
     "css-loader": "^3.2.0",
     "express": "^4.17.1",
     "file-loader": "^4.2.0",
     "glob": "^7.1.4",
+    "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
     "image-webpack-loader": "^5.0.0",
     "pug": "^2.0.4",
@@ -43,7 +49,7 @@
     "typescript": "^3.5.3",
     "underscore": "^1.9.1",
     "url-polyfill": "^1.1.7",
-    "webpack": "^4.35.0",
+    "webpack": "^4.41.5",
     "webpack-cli": "^3.3.7"
   },
   "scripts": {

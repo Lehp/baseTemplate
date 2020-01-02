@@ -1,8 +1,11 @@
+"use strict";
+
 import { Component } from '@angular/core';
+import template from "./index.component.pug"
 
 @Component({
   selector: 'index-component',
-  templateUrl: './index.component.pug',
+  template: template(),
   styleUrls: ['./index.component.styl']
 })
 export class IndexComponent {
