@@ -20,7 +20,7 @@ module.exports = {
         new htmlWebpackPlugin({
         angularAppName: "lolTricks",
         title: "lolTricks",
-        template: "./src/index/index.component.pug"
+        template: "./src/app/base/IndexComponent/IndexComponent.pug"
       })
     ],
     module: {
