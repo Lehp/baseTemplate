@@ -3,13 +3,9 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "baseTemplate": {
+    "pureAngular": {
       "projectType": "application",
-      "schematics": {
-        "@schematics/angular:component": {
-          "style": "styl"
-        }
-      },
+      "schematics": {},
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -17,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/baseTemplate",
+            "outputPath": "dist/pureAngular",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -28,7 +24,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.styl"
+              "src/styles.css"
             ],
             "scripts": []
           },
@@ -67,18 +63,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "baseTemplate:build"
+            "browserTarget": "pureAngular:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "baseTemplate:build:production"
+              "browserTarget": "pureAngular:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "baseTemplate:build"
+            "browserTarget": "pureAngular:build"
           }
         },
         "test": {
@@ -93,7 +89,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.styl"
+              "src/styles.css"
             ],
             "scripts": []
           }
@@ -115,15 +111,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "baseTemplate:serve"
+            "devServerTarget": "pureAngular:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "baseTemplate:serve:production"
+              "devServerTarget": "pureAngular:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "baseTemplate"
+  "defaultProject": "pureAngular"
 }
