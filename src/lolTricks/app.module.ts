@@ -8,7 +8,7 @@ import { BaseComponent } from "./base/base.component";
 
 const lolRoutes = [
   { path: "", component: OverviewComponent },
-  // { path: "details/:detailsId", component: BaseCoomponent }
+  // { path: "details/:detailsId", component: BaseComponent }
   { path: "details/:detailsId", component: DetailsComponent },
   { path: "details/:detailsId", component: DetailsComponent }
 ];
