@@ -2,7 +2,7 @@
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./server",
-    "outDir": "./dist/out-tsc",
+    "outDir": "./server/dist",
     "sourceMap": true,
     "declaration": false,
     "downlevelIteration": true,
